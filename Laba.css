@@ -1,0 +1,154 @@
+body {
+background-color: #f4f4f9;
+font-family: Arial, sans-serif;
+color: #333333;
+margin: 0;
+padding: 0;
+line-height: 1.5;
+}
+
+.top-marquee {
+background-color: #eaf2f8;
+border-bottom: 1px solid #cccccc;
+padding: 4px 0;
+font-size: 14px;
+color: #2c3e50;
+}
+
+header {
+background-color: #2c3e50;
+color: white;
+padding: 20px;
+text-align: center;
+}
+
+header h1 {
+margin: 0 0 12px 0;
+font-size: 26px;
+}
+
+.main-nav {
+background-color: #34495e;
+padding: 10px;
+border-radius: 4px;
+display: inline-block;
+}
+
+.nav-link {
+color: white;
+text-decoration: none;
+margin: 0 12px;
+font-weight: bold;
+font-size: 15px;
+}
+
+.nav-link:hover {
+text-decoration: underline;
+color: #eaf2f8;
+}
+
+main section {
+width: 80%;
+margin: 20px auto;
+background-color: white;
+padding: 20px;
+border: 1px solid #cccccc;
+}
+
+h2 {
+color: #2c3e50;
+border-bottom: 2px solid #3498db;
+padding-bottom: 6px;
+margin-top: 0;
+}
+
+hr {
+border: 0;
+border-top: 1px solid #cccccc;
+margin: 20px 0;
+}
+
+ol.steps-list {
+list-style-position: outside;
+padding-left: 25px;
+}
+
+ol.steps-list li {
+margin-bottom: 8px;
+}
+
+ul.catalog-list {
+list-style-type: square;
+list-style-position: inside;
+background-color: #eaf2f8;
+padding: 15px 20px;
+border: 1px solid #aed6f1;
+}
+
+ul.catalog-list li {
+margin-bottom: 8px;
+}
+
+dl.terms-list {
+background-color: #f9fbfd;
+border: 1px solid #d6eaf8;
+padding: 15px 20px;
+}
+
+dl.terms-list dt {
+font-weight: bold;
+color: #2c3e50;
+margin-top: 10px;
+}
+
+dl.terms-list dt:first-child {
+margin-top: 0;
+}
+
+dl.terms-list dd {
+margin-left: 20px;
+margin-bottom: 8px;
+color: #444444;
+}
+
+menu.control-menu {
+padding: 0;
+margin: 15px 0;
+list-style: none;
+}
+
+command {
+display: inline-block;
+background-color: #3498db;
+color: white;
+padding: 8px 14px;
+margin-right: 8px;
+margin-bottom: 6px;
+border: 1px solid #2980b9;
+font-size: 14px;
+}
+
+dir.branches-dir {
+background-color: #f4f4f9;
+padding: 12px 30px;
+border-left: 4px solid #3498db;
+}
+
+footer {
+background-color: #2c3e50;
+color: white;
+text-align: center;
+padding: 15px;
+margin-top: 30px;
+font-size: 14px;
+}
+
+footer a {
+color: #85c1e9;
+text-decoration: none;
+margin: 0 10px;
+}
+
+footer a:hover {
+text-decoration: underline;
+}

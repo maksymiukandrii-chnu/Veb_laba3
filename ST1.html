@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Андрій Максимюк">
+    <title>Компанія "Комп’ютерні аксесуари" — Лабораторна №3 (Варіант 10)</title>
+
+    <!-- Обов'язковий тег <link> за варіантом 10: dir, type, id, sizes, title -->
+    <link id="site-icon" rel="icon" type="image/png" sizes="32x32" title="Іконка фірми Комп'ютерні аксесуари" dir="ltr" href="icon.png">
+
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        /* Біжучий рядок */
+        .top-marquee {
+            background-color: #eaf2f8;
+            border-bottom: 1px solid #cccccc;
+            padding: 4px 0;
+            font-size: 14px;
+            color: #2c3e50;
+        }
+
+        /* Темно-синя шапка */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 12px 0;
+            font-size: 26px;
+        }
+
+        /* Навігаційне меню <nav> */
+        .main-nav {
+            background-color: #34495e;
+            padding: 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+            color: #eaf2f8;
+        }
+
+        /* Білі блоки по центру (width: 80%) */
+        main section {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #cccccc;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 6px;
+            margin-top: 0;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #cccccc;
+            margin: 20px 0;
+        }
+
+        /* CSS-властивості для списків (згідно з методичкою) */
+        ol.steps-list {
+            list-style-position: outside;
+            padding-left: 25px;
+        }
+
+        ol.steps-list li {
+            margin-bottom: 8px;
+        }
+
+        ul.catalog-list {
+            list-style-type: square;
+            list-style-position: inside;
+            background-color: #eaf2f8;
+            padding: 15px 20px;
+            border: 1px solid #aed6f1;
+        }
+
+        ul.catalog-list li {
+            margin-bottom: 8px;
+        }
+
+        dl.terms-list {
+            background-color: #f9fbfd;
+            border: 1px solid #d6eaf8;
+            padding: 15px 20px;
+        }
+
+        dl.terms-list dt {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 10px;
+        }
+
+        dl.terms-list dt:first-child {
+            margin-top: 0;
+        }
+
+        dl.terms-list dd {
+            margin-left: 20px;
+            margin-bottom: 8px;
+            color: #444444;
+        }
+
+        /* Стилізація <menu>, <command>, <dir> */
+        menu.control-menu {
+            padding: 0;
+            margin: 15px 0;
+            list-style: none;
+        }
+
+        command {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 8px 14px;
+            margin-right: 8px;
+            margin-bottom: 6px;
+            border: 1px solid #2980b9;
+            font-size: 14px;
+        }
+
+        dir.branches-dir {
+            background-color: #f4f4f9;
+            padding: 12px 30px;
+            border-left: 4px solid #3498db;
+        }
+
+        /* Підвал */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #85c1e9;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Біжучий рядок: тег <marquee> за варіантом 10 (class, height, hspace, truespeed, loop, scrolldelay) -->
+    <div class="top-marquee">
+        <marquee class="promo-marquee" height="20" hspace="15" truespeed="truespeed" loop="infinite" scrolldelay="40">
+            Віртуальна фірма "Комп’ютерні аксесуари" — Лабораторна робота №3 (Варіант 10). Офіційний постачальник: <bdi class="partner-name">Future Tech Accessories</bdi>. Швидка навігація: Alt+1, Alt+2, Alt+3.
+        </marquee>
+    </div>
+
+    <!-- Шапка та меню проєкту -->
+    <header id="main-menu">
+        <h1>Віртуальна фірма "Комп’ютерні аксесуари"</h1>
+        
+        <!-- Обов'язковий тег <nav> з атрибутом class -->
+        <nav class="main-nav">
+            <a href="#order-steps" class="nav-link" title="Перейти до нумерованого списку" type="text/html" accesskey="1" lang="uk">
+                Як замовити (Список OL)
+            </a>
+            <a href="#assortment" class="nav-link" title="Перейти до маркірованого списку" type="text/html" accesskey="2" lang="uk">
+                Асортимент (Список UL)
+            </a>
+            <a href="#dictionary" class="nav-link" title="Перейти до списку визначень" type="text/html" accesskey="3" lang="uk">
+                Словник термінів (Список DL)
+            </a>
+            <a href="price.html" 
+               download="price.html" 
+               coords="0,0,120,30" 
+               type="text/html" 
+               class="nav-link" 
+               title="Завантажити прайс-лист" 
+               accesskey="d" 
+               lang="uk">
+                Прайс-лист (Завантажити)
+            </a>
+        </nav>
+    </header>
+
+    <!-- Основний вміст сторінки -->
+    <main>
+        
+        <section id="order-steps">
+            <h2>Етапи оформлення замовлення</h2>
+            <p>Для придбання комп’ютерних аксесуарів у нашій фірмі виконайте наступні кроки:</p>
+
+            <!-- Обов'язковий тег <ol> з атрибутами: title, style, id, type="A", lang -->
+            <ol id="steps-ol" class="steps-list" title="Послідовність оформлення замовлення" type="A" lang="uk" style="color: #333333;">
+                <!-- Обов'язкові теги <li> з атрибутами: style, start, value -->
+                <li style="font-weight: normal;" start="1" value="1">
+                    Вибір необхідних аксесуарів у каталозі нашого магазину.
+                </li>
+                <li style="font-weight: normal;" start="2" value="2">
+                    Додавання товарів до кошика та перевірка сумісності пристроїв.
+                </li>
+                <li style="font-weight: normal;" start="3" value="3">
+                    Вибір способу доставки (кур'єр по місту або поштове відділення).
+                </li>
+                <li style="font-weight: normal;" start="4" value="4">
+                    Оплата замовлення онлайн або при отриманні товару.
+                </li>
+                <li style="font-weight: bold;" start="5" value="5">
+                    Отримання товару та гарантійного талона від фірми.
+                </li>
+            </ol>
+
+            <hr>
+
+            <h2 id="assortment">Категорії наших товарів</h2>
+            <p>Основні напрямки продукції компанії "Комп’ютерні аксесуари":</p>
+
+            <!-- Обов'язковий тег <ul> з атрибутами: start, type, compact, title, value -->
+            <ul class="catalog-list" start="1" type="disc" compact="compact" title="Каталог категорій товарів" value="1">
+                <li style="font-weight: normal;" start="1" value="1">
+                    <strong>Клавіатури та миші:</strong> механічні, мембранні, бездротові ігрові та офісні моделі.
+                </li>
+                <li style="font-weight: normal;" start="2" value="2">
+                    <strong>Аудіо-гарнітури:</strong> повнорозмірні навушники з мікрофоном, настільні акустичні системи.
+                </li>
+                <li style="font-weight: normal;" start="3" value="3">
+                    <strong>Кабелі та перехідники:</strong> HDMI, DisplayPort, USB Type-C хаби та док-станції.
+                </li>
+                <li style="font-weight: normal;" start="4" value="4">
+                    <strong>Аксесуари для ноутбуків:</strong> охолоджуючі підставки, сумки, рюкзаки та захисні чохли.
+                </li>
+                <li style="font-weight: normal;" start="5" value="5">
+                    <strong>Ексклюзивні поставки:</strong> продукція бренду <bdi class="brand-bidi">LogiTech Pro</bdi>.
+                </li>
+            </ul>
+
+            <hr>
+
+            <h2 id="dictionary">Словник характеристик товарів</h2>
+            <p>Пояснення основних технічних термінів для покупців:</p>
+
+            <!-- Обов'язковий тег <dl> з атрибутами: style, title -->
+            <dl class="terms-list" title="Словник технічних термінів" style="margin-top: 10px;">
+                <!-- Обов'язкові теги <dt> з атрибутами: class, id, lang -->
+                <dt id="dt-dpi" class="term-title" lang="en">DPI (Dots Per Inch)</dt>
+                <dd>Показник чутливості комп'ютерної миші — кількість точок на дюйм, на які реагує сенсор.</dd>
+
+                <dt id="dt-hub" class="term-title" lang="uk">USB-хаб (Концентратор)</dt>
+                <dd>Пристрій, що дозволяє підключити кілька периферійних пристроїв до одного порту комп'ютера.</dd>
+
+                <dt id="dt-switches" class="term-title" lang="en">Mechanical Switches</dt>
+                <dd>Механічні перемикачі під кожною клавішею клавіатури, що забезпечують високу точність та довговічність.</dd>
+            </dl>
+
+            <hr>
+
+            <h2>Додаткові команди та адреси магазинів</h2>
+            
+            <menu class="control-menu">
+                <!-- Обов'язкові теги <command> з атрибутами: dir, title, style -->
+                <command dir="ltr" title="Оформити швидке замовлення" style="border-radius: 3px;">
+                    Швидке замовлення
+                </command>
+                <command dir="ltr" title="Зв'язатися з менеджером" style="border-radius: 3px;">
+                    Консультація менеджера
+                </command>
+            </menu>
+
+            <p>Адреси наших пунктів видачі замовлень:</p>
+            <!-- Обов'язковий тег <dir> з атрибутом id -->
+            <dir id="shops-directory" class="branches-dir">
+                <li>Головний магазин: вул. Університетська, 15 (Центр)</li>
+                <li>Філія №2: просп. Незалежності, 42 (ТЦ "Електроніка")</li>
+                <li>Сервісний центр: <bdi class="branch-bidi">вул. Технічна, 8</bdi></li>
+            </dir>
+        </section>
+
+    </main>
+
+    <!-- Підвал зі зворотним посиланням на меню -->
+    <footer>
+        <p style="margin: 0 0 8px 0;">&copy; 2026 Віртуальна фірма "Комп’ютерні аксесуари" | Автор: Андрій Максимюк</p>
+        <div>
+            <a href="#main-menu" class="footer-link" title="Повернутися до меню вгорі сторінки" type="text/html" accesskey="m" lang="uk">
+                Повернутися до головного меню
+            </a>
+            |
+            <a href="#order-steps" class="footer-link" title="До етапів замовлення" type="text/html" lang="uk">
+                Етапи замовлення
+            </a>
+            |
+            <a href="#assortment" class="footer-link" title="До каталогу" type="text/html" lang="uk">
+                Каталог товарів
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
